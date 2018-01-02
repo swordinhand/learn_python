@@ -1,16 +1,16 @@
 '''
 https://py.checkio.org/mission/most-numbers
-应该使用x==None来判断x是否是None，如果使用if not x这样的写法来判断，会把0也当成None
+应该使用x is None来判断x是否是None，如果使用if not x这样的写法来判断，会把0也当成None
 '''
 def checkio(*args):
     min = max = None
     for i in args:
-        if min == None or i < min:
+        if min is None or i < min:
             min = i
-        if max == None or i > max:
+        if max is None or i > max:
             max = i
-    print("max={0}, min={1}".format(max, min))       
-    return max - min  if max != None else 0
+    #print("max={0}, min={1}".format(max, min))       
+    return max - min  if max is not None else 0
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
