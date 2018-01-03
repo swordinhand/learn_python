@@ -1,4 +1,5 @@
 '''
+https://py.checkio.org/mission/bigger-price/
 sorted函数很强大，以后应该还会用到
 '''
 def bigger_price(limit, data):

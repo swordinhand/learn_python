@@ -1,4 +1,5 @@
 '''
+https://py.checkio.org/mission/best-stock/
 python2是for k, v in data.iteritems()，而python3是for k, v in data.items()
 更简单的写法是for k in data
 '''
