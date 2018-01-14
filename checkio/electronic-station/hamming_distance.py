@@ -1,6 +1,7 @@
 '''
 https://py.checkio.org/mission/hamming-distance2/
 知道怎么求hamming distance之后，这题就特别简单了
+两个数字异或，然后看结果转成二进制还有几个1
 '''
 def checkio(n, m):
     return bin(n^m).count('1')
